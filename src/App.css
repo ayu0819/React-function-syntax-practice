@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+html {
+  font: 100% / 1.5 "Lato", "Hiragino Maru Gothic Pro", "Meiryo UI", Meiryo, "MS PGothic", sans-serif;
+  background: #f5f9ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6, p, div {
+   color: #2b546a;
+   font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding-top: 40px;
+  text-align:center;
+}
+
+p {
+  text-align:center;
+}
+
+.language {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-flex-wrap: wrap;          /* Safari etc. */
+  -ms-flex-wrap    : wrap;          /* IE10        */
+  flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.language-item {
+  cursor: pointer;
+  width: 240px;
+  margin: 15px;
+  background: #f9f9f9;
+  text-align:center;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.language-name {
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.language-image {
+  margin: 0 auto;
+  height: auto;
+  max-width: 200px;
+  width: 20vw;
+  padding: 10px;
+}
+
+.language-introduction{
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
 }
